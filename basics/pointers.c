@@ -32,5 +32,11 @@ int main(){
     //Method 2
     b=&A[0];//Here we need to add &(ampersand) because we are specifying the index of the array.
 
+    //Accessing all the elemtnt of the array
+    //Method 1
+    int i;
+    for(i=0;i<5;i++){
+        printf("%d\n",A[i]);//using the name of array name
+    }
     return 0;
 }

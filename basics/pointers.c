@@ -38,5 +38,11 @@ int main(){
     for(i=0;i<5;i++){
         printf("%d\n",A[i]);//using the name of array name
     }
+    //Pointer acts as the name of array name in case of array to pointer. So we can use name of pointer instead of array name 
+    
+    //Method 2
+    for(i=0;i<5;i++){
+        printf("%d\n",b[i]);//Works same as Method 1
+    }
     return 0;
 }

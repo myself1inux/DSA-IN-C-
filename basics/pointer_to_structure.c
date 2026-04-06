@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 int main(){
     struct rectangle {
         int length;
@@ -23,5 +24,19 @@ int main(){
     printf("%d is the length of the rectangle\n",(*p).length);
     printf("%d is the breadth of the rectangle\n",p->breadth);
 
+
+    //Creating a structure dynamically in the heap section of the memory
+    struct square {
+        int side1;
+        int side2;
+    };
+    struct square *a=(struct square *)malloc(sizeof(struct square));//This will create a pointer a and pointing to the structure square created in the heap of the memory
+    
+    a-> side1=10;
+    a->side2=20;
+
+    printf("%d is the side1\n",a->side1);
+    printf("%d is the side2\n",a->side2);
+    
     return 0;
 }
